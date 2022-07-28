@@ -14,7 +14,7 @@
   "fmt": {
     "files": {
       "include": ["**/*.ts", "**/*.tsx"],
-      "exclude": []
+      "exclude": ["bin"]
     },
     "options": {
       "useTabs": true,

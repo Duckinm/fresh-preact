@@ -1,5 +1,6 @@
 /** @jsx h */
 import { h } from 'preact'
+// import BearAndFish from '../islands/BearAndFish.tsx'
 import Counter from '../islands/Counter.tsx'
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <img src="/logo.svg" height="100px" alt="the fresh logo: a sliced lemon dripping with juice" />
       <p class="my-6">Welcome to `fresh`. Try update this message in the ./routes/index.tsx file, and refresh.</p>
       <Counter start={0} />
+      {/* <BearAndFish /> */}
     </div>
   )
 }

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"],
+    "strict": true,
+    "jsx": "react",
+    "noImplicitAny": true,
+    "allowJs": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": false,
+    "strictNullChecks": true
+  },
+  "fmt": {
+    "files": {
+      "include": ["**/*.ts", "**/*.tsx"],
+      "exclude": []
+    },
+    "options": {
+      "useTabs": true,
+      "lineWidth": 120,
+      "indentWidth": 2,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    }
+  },
+  "tasks": {
+    "start": "deno run -A --watch=static/,routes/ dev.ts & deno task start:css",
+    "start:css": "npx --yes tailwindcss -i ./styles/tailwind.css -o ./static/main.css --watch"
+  },
+  "importMap": "./import_map.json"
+}
